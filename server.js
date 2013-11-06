@@ -16,10 +16,11 @@ var express = require('express'),
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
     config = require('./config/config'),
     auth = require('./config/middlewares/authorization'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    mongoDbConnections = process.env.MONGOHQ_URL || config.db;
 
 //Bootstrap db connection
-var db = mongoose.connect(config.db);
+var db = mongoose.connect(mongoDbConnections);
 
 //Bootstrap models
 var models_path = __dirname + '/app/models';
@@ -43,7 +44,7 @@ var port = config.port;
 app.listen(port);
 console.log('Express app started on port ' + port);
 
-//Initializing logger 
+//Initializing logger
 logger.init(app, passport, mongoose);
 
 //expose app

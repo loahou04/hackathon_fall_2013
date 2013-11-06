@@ -1,7 +1,7 @@
 {
-    "db": "mongodb://heroku:f2bf807a3e4c0d2f164f21fe2ab1559d@paulo.mongohq.com:10038/app19249166",
+    "db": "mongodb://localhost:hackathon-dev",
     "app": {
-        "name": "MEAN - A Modern Stack - Development"
+        "name": "Hackathon - A Modern Stack - Development"
     },
     "facebook": {
         "clientID": "APP_ID",

@@ -1,4 +1,4 @@
-angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
+angular.module('Hackathon.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
 
     $scope.create = function() {
@@ -15,7 +15,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
     };
 
     $scope.remove = function(article) {
-        article.$remove();  
+        article.$remove();
 
         for (var i in $scope.articles) {
             if ($scope.articles[i] == article) {

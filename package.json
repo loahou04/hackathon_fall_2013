@@ -1,9 +1,9 @@
 {
-    "name": "mean",
+    "name": "Hackathon",
     "description": "Mongo",
     "version": "1.0.0",
     "private": false,
-    "author": "MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
+    "author": "Hackathon - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
     "engines": {
         "node": "0.10.x",
         "npm": "1.2.x"

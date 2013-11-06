@@ -1,4 +1,4 @@
-angular.module('mean.workouts').controller('WorkoutsController', [
+angular.module('Hackathon.workouts').controller('WorkoutsController', [
 	'$scope',
 	'$routeParams',
 	'$location',

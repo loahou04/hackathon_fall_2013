@@ -1,8 +1,8 @@
-# MEAN Stack
+# Hackathon Stack
 
 [![Build Status](https://travis-ci.org/loahou04/hackathon_fall_2013.png)](https://travis-ci.org/loahou04/hackathon_fall_2013)
 
-MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
+Hackathon is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of Hackathon based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
 ## Prerequisites
 * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
@@ -24,7 +24,7 @@ MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://w
 
 ## Quick Install
 
- The quickest way to get started with MEAN is to clone the project and utilize it like this:
+ The quickest way to get started with Hackathon is to clone the project and utilize it like this:
 
   Install dependencies:
 
@@ -45,7 +45,7 @@ MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://w
     http://localhost:3000
 
 ## Quick Deployment
-4 commands to deploy your mean app to heroku,
+4 commands to deploy your Hackathon app to heroku,
 Before you start make sure you have <a href="https://toolbelt.heroku.com/">heroku toolbelt</a> installed and an accessible mongo db instance - you can try <a href="http://www.mongohq.com/">mongohq</a> which have an easy setup )
 
 ```bash
@@ -62,7 +62,7 @@ All configuration is specified in the [config](config/) folder, particularly the
 ### Environmental Settings
 
 There are three environments provided by default, __development__, __test__, and __production__. Each of these environments has the following configuration options:
-* db - This is the name of the MongoDB database to use, and is set by default to __mean-dev__ for the development environment.
+* db - This is the name of the MongoDB database to use, and is set by default to __Hackathon-dev__ for the development environment.
 * root - This is determined automatically at the start of this file, but can be overridden here.
 * app.name - This is the name of your app or website, and can be different for each environment. You can tell which environment you are running by looking at the TITLE attribute that your app generates.
 * Social Registration - Facebook, GitHub, Google, Twitter. You can specify your own social accounts here for each social platform, with the following for each provider:
@@ -82,20 +82,20 @@ If you are using node instead of grunt, it is very similar:
 
 ## Getting Started
   We pre-included an article example, check it out:
-  * [The Model](https://github.com/linnovate/mean/blob/master/app/models/article.js) - Where we define our object schema.
-  * [The Controller](https://github.com/linnovate/mean/blob/master/app/controllers/articles.js) - Where we take care of our backend logic.
-  * [NodeJS Routes](https://github.com/linnovate/mean/blob/master/config/routes.js) - Where we define our REST service routes.
-  * [AngularJs Routes](https://github.com/linnovate/mean/blob/master/public/js/config.js) - Where we define our CRUD routes.
-  * [The AngularJs Service](https://github.com/linnovate/mean/blob/master/public/js/services/articles.js) - Where we connect to our REST service.
-  * [The AngularJs Controller](https://github.com/linnovate/mean/blob/master/public/js/controllers/articles.js) - Where we take care of  our frontend logic.
-  * [The AngularJs Views Folder](https://github.com/linnovate/mean/blob/master/public/views/articles) - Where we keep our CRUD views.
+  * [The Model](https://github.com/linnovate/Hackathon/blob/master/app/models/article.js) - Where we define our object schema.
+  * [The Controller](https://github.com/linnovate/Hackathon/blob/master/app/controllers/articles.js) - Where we take care of our backend logic.
+  * [NodeJS Routes](https://github.com/linnovate/Hackathon/blob/master/config/routes.js) - Where we define our REST service routes.
+  * [AngularJs Routes](https://github.com/linnovate/Hackathon/blob/master/public/js/config.js) - Where we define our CRUD routes.
+  * [The AngularJs Service](https://github.com/linnovate/Hackathon/blob/master/public/js/services/articles.js) - Where we connect to our REST service.
+  * [The AngularJs Controller](https://github.com/linnovate/Hackathon/blob/master/public/js/controllers/articles.js) - Where we take care of  our frontend logic.
+  * [The AngularJs Views Folder](https://github.com/linnovate/Hackathon/blob/master/public/views/articles) - Where we keep our CRUD views.
 
-## MEAN Modules
-   Mean presents a growing eco-system of MEAN based modules in the npm repository, To write (and contribute) your own MEAN based module checkout [mean-logger](https://npmjs.org/package/mean-logger) for examples.
+## Hackathon Modules
+   Hackathon presents a growing eco-system of Hackathon based modules in the npm repository, To write (and contribute) your own Hackathon based module checkout [mean-logger](https://npmjs.org/package/mean-logger) for examples.
 
 ## More Information
 
-  * Visit our [Ninja's Zone](http://www.meanleanstartupmachine.com/) for extended support.
+  * Visit our [Ninja's Zone](http://www.Hackathonleanstartupmachine.com/) for extended support.
   * Visit us at [Linnovate.net](http://www.linnovate.net/).
   * Contact amos on any issue via [E-Mail](mailto:mail@amoshaviv.com), [Facebook](http://www.facebook.com/amoshaviv), or [Twitter](http://www.twitter.com/amoshaviv).
 

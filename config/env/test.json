@@ -1,8 +1,8 @@
 {
-    "db": "mongodb://localhost/mean-test",
+    "db": "mongodb://localhost/Hackathon-test",
     "port": 3001,
     "app": {
-        "name": "MEAN - A Modern Stack - Test"
+        "name": "Hackathon - A Modern Stack - Test"
     },
     "facebook": {
         "clientID": "APP_ID",

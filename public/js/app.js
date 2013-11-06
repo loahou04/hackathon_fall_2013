@@ -1,5 +1,5 @@
-window.app = angular.module('mean', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.route', 'mean.system', 'mean.articles', 'mean.workouts']);
+window.app = angular.module('Hackathon', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.route', 'Hackathon.system', 'Hackathon.articles', 'Hackathon.workouts']);
 
-angular.module('mean.system', []);
-angular.module('mean.articles', []);
-angular.module('mean.workouts', []);
+angular.module('Hackathon.system', []);
+angular.module('Hackathon.articles', []);
+angular.module('Hackathon.workouts', []);

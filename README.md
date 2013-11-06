@@ -1,6 +1,9 @@
 # MEAN Stack
 
-MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.  
+"!https://travis-ci.org/loahou04/hackathon_fall_2013.png!":https://travis-ci.org/loahou04/hackathon_fall_2013
+
+
+MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
 ## Prerequisites
 * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
@@ -37,7 +40,7 @@ MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://w
   When not using grunt you can use:
 
     $ node server
-    
+
   Then open a browser and go to:
 
     http://localhost:3000
@@ -90,7 +93,7 @@ If you are using node instead of grunt, it is very similar:
 
 ## MEAN Modules
    Mean presents a growing eco-system of MEAN based modules in the npm repository, To write (and contribute) your own MEAN based module checkout [mean-logger](https://npmjs.org/package/mean-logger) for examples.
-  
+
 ## More Information
 
   * Visit our [Ninja's Zone](http://www.meanleanstartupmachine.com/) for extended support.

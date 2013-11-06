@@ -9,7 +9,7 @@ module.exports = function(app, passport, auth) {
 
     //Setting up the users api
     app.post('/users', users.create);
-    
+
     app.post('/users/session', passport.authenticate('local', {
         failureRedirect: '/signin',
         failureFlash: 'Invalid email or password.'
@@ -72,6 +72,17 @@ module.exports = function(app, passport, auth) {
 
     //Finish with setting up the articleId param
     app.param('articleId', articles.article);
+
+    //Workout Routes
+    var workout = require('../app/controllers/workouts');
+    app.get('/workouts', auth.requiresLogin, workout.all);
+    app.post('/workouts', auth.requiresLogin, workout.create);
+    app.get('/workouts/:workoutId', workout.show);
+    app.put('/workouts/:workoutId', auth.requiresLogin, auth.workout.hasAuthorization, workout.update);
+    app.del('/workouts/:workoutId', auth.requiresLogin, auth.workout.hasAuthorization, workout.destroy);
+
+    //Finish with setting up the articleId param
+    app.param('workoutId', workout.workout);
 
     //Home route
     var index = require('../app/controllers/index');

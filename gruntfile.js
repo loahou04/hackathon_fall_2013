@@ -6,20 +6,20 @@ module.exports = function(grunt) {
             jade: {
                 files: ['app/views/**'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
             html: {
                 files: ['public/views/**'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
             js: {
                 files: ['public/js/**'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
             css: {
                 files: ['public/sass/**'],
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             },
             exec: {
                 options: {
-                    exec: 'less'                    
+                    exec: 'less'
                 }
             }
         },
@@ -77,19 +77,27 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
+        },
+        mochaTest: {
+
+            src:'test/**/*.js'
         }
     });
 
-    //Load NPM tasks 
+    //Load NPM tasks
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-mocha-test');
 
     //Making grunt default to force in order not to break the project.
     grunt.option('force', true);
 
     //Default task(s).
     grunt.registerTask('default', ['jshint', 'compass', 'concurrent:target']);
+
+    //just do a build
+    grunt.registerTask('build', ['jshint', 'compass', 'mochaTest']);
 };

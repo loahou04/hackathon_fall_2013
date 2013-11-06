@@ -2,6 +2,9 @@
 window.app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
+        when('/workouts', {
+            templateUrl: 'views/workouts/list.html'
+        }).
         when('/articles', {
             templateUrl: 'views/articles/list.html'
         }).

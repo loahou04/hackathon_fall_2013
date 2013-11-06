@@ -16,11 +16,15 @@ var express = require('express'),
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
     config = require('./config/config'),
     auth = require('./config/middlewares/authorization'),
-    mongoose = require('mongoose'),
-    mongoDbConnections = process.env.MONGOHQ_URL || config.db;
+    mongoose = require('mongoose');
 
+    //if there is an environment variabel for mongoHQ use it
+    //have to use config.db because express uses it to hold onto the session
+   	config.db = process.env.MONGOHQ_URL || config.db;
+
+   	console.log(config.db);
 //Bootstrap db connection
-var db = mongoose.connect(mongoDbConnections);
+var db = mongoose.connect(config.db);
 
 //Bootstrap models
 var models_path = __dirname + '/app/models';

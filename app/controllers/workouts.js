@@ -7,6 +7,14 @@ var mongoose = require('mongoose'),
     _ = require('underscore');
 
 
+exports.testTravis = function() {
+    //this really does nothing
+    if(true)
+        return;
+
+    //juts doing this so travis will kick off a build
+};
+
 /**
  * Find workout by id
  */
